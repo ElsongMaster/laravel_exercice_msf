@@ -18,7 +18,7 @@
       <tr>
         <th scope="row">{{$data->id}}</th>
         <td>{{$data->nom}}</td>
-        <td>{{$data->descriptio}}</td>
+        <td>{{$data->description}}</td>
       </tr>
       @endforeach
    

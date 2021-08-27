@@ -11,7 +11,7 @@
       <th scope="col">Id</th>
       <th scope="col">Nom</th>
       <th scope="col">Description</th>
-      <th scope="col">Show</th>
+      {{-- <th scope="col">Show</th> --}}
     </tr>
   </thead>
   <tbody>
@@ -19,8 +19,8 @@
       <tr>
         <th scope="row">{{$data->id}}</th>
         <td>{{$data->nom}}</td>
-        <td>{{$data->descriptio}}</td>
-        <td><a href="{{route('showFormations',$data->id)}}" class="btn bnt-info"></a></td>  
+        <td>{{$data->description}}</td>
+        {{-- <td><a href="{{route('showFormation',$data->id)}}" class="btn bnt-info"></a></td>   --}}
     </tr>
       @endforeach
    
