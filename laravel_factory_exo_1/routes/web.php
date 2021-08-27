@@ -46,11 +46,11 @@ Route::get('/typeformations/{id}/show', [BackTypeFormationsController::class,'sh
 
 //UPDATE
 Route::get('/typeformations/{id}/edit', [BackTypeFormationsController::class,'edit'])->name('editTypeFormation');
-Route::put('/typeformations/{id}/update', [BackTypeFormationsController::class,'update'])->name('updateFormation');
-Route::get('/batiments/{id}/edit', [BackBatimentsController::class,'edit'])->name('editFormation');
+Route::put('/typeformations/{id}/update', [BackTypeFormationsController::class,'update'])->name('updateTypeFormation');
+Route::get('/batiments/{id}/edit', [BackBatimentsController::class,'edit'])->name('editBatiment');
 Route::put('/batiments/{id}/update', [BackBatimentsController::class,'update'])->name('updateBatiment');
-Route::get('/formations/{id}/edit', [BackFormationsController::class,'edit'])->name('editBatiment');
-Route::put('/formations/{id}/update', [BackFormationsController::class,'update'])->name('updateTypeFormation');
+Route::get('/formations/{id}/edit', [BackFormationsController::class,'edit'])->name('editFormation');
+Route::put('/formations/{id}/update', [BackFormationsController::class,'update'])->name('updateFormation');
 Route::get('/eleves/{id}/edit', [BackElevesController::class,'edit'])->name('editEleve');
 Route::put('/eleves/{id}/update', [BackElevesController::class,'update'])->name('updateEleve');
 
