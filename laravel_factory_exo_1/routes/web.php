@@ -46,11 +46,22 @@ Route::get('/typeformations/{id}/show', [BackTypeFormationsController::class,'sh
 
 //UPDATE
 Route::get('/typeformations/{id}/edit', [BackTypeFormationsController::class,'edit'])->name('editTypeFormation');
-Route::put('/typeformations/{id}/update', [BackTypeFormationsController::class,'update'])->name('updateTypeFormation');
-Route::get('/batiments/{id}/edit', [BackBatimentsController::class,'edit'])->name('editTypeFormation');
-Route::put('/batiments/{id}/update', [BackBatimentsController::class,'update'])->name('updateTypeFormation');
-Route::get('/formations/{id}/edit', [BackFormationsController::class,'edit'])->name('editTypeFormation');
+Route::put('/typeformations/{id}/update', [BackTypeFormationsController::class,'update'])->name('updateFormation');
+Route::get('/batiments/{id}/edit', [BackBatimentsController::class,'edit'])->name('editFormation');
+Route::put('/batiments/{id}/update', [BackBatimentsController::class,'update'])->name('updateBatiment');
+Route::get('/formations/{id}/edit', [BackFormationsController::class,'edit'])->name('editBatiment');
 Route::put('/formations/{id}/update', [BackFormationsController::class,'update'])->name('updateTypeFormation');
-Route::get('/eleves/{id}/edit', [BackElevesController::class,'edit'])->name('editTypeFormation');
-Route::put('/eleves/{id}/update', [BackElevesController::class,'update'])->name('updateTypeFormation');
+Route::get('/eleves/{id}/edit', [BackElevesController::class,'edit'])->name('editEleve');
+Route::put('/eleves/{id}/update', [BackElevesController::class,'update'])->name('updateEleve');
 
+
+
+//DELETE
+Route::delete('/batiments/{id}/delete', [BackBatimentsController::class,'destroy'])->name('deleteBatiment');
+Route::delete('/eleves/{id}/delete',  [BackElevesController::class,'destroy'])->name('deleteEleve');
+Route::delete('/formations/{id}/delete',  [BackFormationsController::class,'destroy'])->name('deleteFormation');
+Route::delete('/typeFormations/{id}/delete',  [BackTypeFormationsController::class,'destroy'])->name('deleteTypeFormation');
+Route::delete('/batiment/deleteAll', [BackBatimentsController::class,'destroyAll'])->name('deleteAllBatiments');
+Route::delete('/eleves/deleteAll',  [BackElevesController::class,'destroyAll'])->name('deleteAllEleves');
+Route::delete('/formations/deleteAll',  [BackFormationsController::class,'destroyAll'])->name('deleteAllFormations');
+Route::delete('/typeFormations/deleteAll',  [BackTypeFormationsController::class,'destroyAll'])->name('deleteAllTypeFormations');
