@@ -9,7 +9,7 @@ class BackFormationsController extends Controller
 {
        public function  index(){
         $datas = Formation::all();
-        return view('backoffice.layouts.backFormations',compact('datas'));
+        return view('backoffice.backFormations',compact('datas'));
     }
 
     public function show(Formation $id){

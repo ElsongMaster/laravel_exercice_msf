@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    @include('backPartials.navBar')
+    @include('backoffice.backPartials.navBar')
     @yield('backContent')
-    @include('backPartials.footer')
+    @include('backoffice.backPartials.footer')
     
     <script src="{{asset('js/app.js')}}"></script>
 </body>

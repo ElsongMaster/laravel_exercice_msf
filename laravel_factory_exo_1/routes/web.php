@@ -27,6 +27,10 @@ Route::get('/formations',  [FormationsController::class,'index'])->name('formati
 Route::get('/typeFormations',  [TypeFormationsController::class,'index'])->name('typeFormations');
 
 //READ
+
+Route::get('/backoffice/admin', function (){
+    return view('backoffice.backTemplate.main');
+})->name('backoffice');
 Route::get('/backoffice/batiment', [BackBatimentController::class,'index'])->name('backBatiment');
 Route::get('/batiments/{id}/show', [BackBatimentController::class,'show'])->name('showBatiment');
 
@@ -38,3 +42,15 @@ Route::get('/formations/{id}/show', [BackFormationsController::class,'show'])->n
 
 Route::get('/backoffice/typeFormations',  [BackTypeFormationsController::class,'index'])->name('backTypeFormations');
 Route::get('/typeformations/{id}/show', [BackTypeFormationsController::class,'show'])->name('showTypeFormation');
+
+
+//UPDATE
+Route::get('/typeformations/{id}/edit', [BackTypeFormationsController::class,'edit'])->name('editTypeFormation');
+Route::put('/typeformations/{id}/update', [BackTypeFormationsController::class,'update'])->name('updateTypeFormation');
+Route::get('/batiments/{id}/edit', [BackBatimentsController::class,'edit'])->name('editTypeFormation');
+Route::put('/batiments/{id}/update', [BackBatimentsController::class,'update'])->name('updateTypeFormation');
+Route::get('/formations/{id}/edit', [BackFormationsController::class,'edit'])->name('editTypeFormation');
+Route::put('/formations/{id}/update', [BackFormationsController::class,'update'])->name('updateTypeFormation');
+Route::get('/eleves/{id}/edit', [BackElevesController::class,'edit'])->name('editTypeFormation');
+Route::put('/eleves/{id}/update', [BackElevesController::class,'update'])->name('updateTypeFormation');
+

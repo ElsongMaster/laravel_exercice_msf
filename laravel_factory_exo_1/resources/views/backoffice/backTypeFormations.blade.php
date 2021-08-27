@@ -16,7 +16,7 @@
       <tr>
         <th scope="row">{{$data->id}}</th>
         <td>{{$data->nom}}</td>
-        <td><a href="{{route('showTypeFormations',$data->id)}}" class="btn bnt-info"></a></td>
+        <td><a href="{{route('showTypeFormation',$data->id)}}" class="btn btn-info">SHOW</a></td>
         
     </tr>
       @endforeach

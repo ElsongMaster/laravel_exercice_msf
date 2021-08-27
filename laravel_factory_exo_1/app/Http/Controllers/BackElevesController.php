@@ -8,7 +8,7 @@ class BackElevesController extends Controller
 {
        public function  index(){
         $datas = Eleve::all();
-        return view('backoffice.layouts.backBatiment',compact('datas'));
+        return view('backoffice.backBatiment',compact('datas'));
     }
 
         public function show(Eleve $id){

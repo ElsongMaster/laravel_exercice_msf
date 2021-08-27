@@ -9,7 +9,7 @@ class BackTypeFormationsController extends Controller
 {
        public function  index(){
         $datas = TypeFormation::all();
-        return view('backoffice.layouts.backTypeFormations',compact('datas'));
+        return view('backoffice.backTypeFormations',compact('datas'));
     }
 
     public function show(TypeFormation $id){

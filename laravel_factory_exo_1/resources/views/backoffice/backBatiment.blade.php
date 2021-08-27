@@ -18,8 +18,8 @@
       <tr>
         <th scope="row">{{$data->id}}</th>
         <td>{{$data->nom}}</td>
-        <td>{{$data->descriptio}}</td>
-        <td><a href="{{route('showBatiment',$data->id)}}" class="btn btn-info"></a></td>
+        <td>{{$data->description}}</td>
+        <td><a href="{{route('showBatiment',$data->id)}}" class="btn btn-info">SHOW</a></td>
       </tr>
       @endforeach
    

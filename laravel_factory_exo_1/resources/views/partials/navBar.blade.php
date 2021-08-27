@@ -3,4 +3,5 @@
     <li class="nav-item"><a  href="{{route('eleves')}}" class="nav-link text-light @if(request()->routeIs('fruits')) active @else '' @endif">Eleves</a></li>
     <li class="nav-item"><a  href="{{route('formations')}}" class="nav-link text-light @if(request()->routeIs('fruits')) active @else '' @endif">Formations</a></li>
     <li class="nav-item"><a  href="{{route('typeFormations')}}" class="nav-link text-light @if(request()->routeIs('fruits')) active @else '' @endif">Types Formations</a></li>
+    <li class="nav-item"><a  href="{{route('backoffice')}}" class="nav-link text-light @if(request()->routeIs('fruits')) active @else '' @endif">Backoffice</a></li>
 </ul>
